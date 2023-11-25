@@ -54,7 +54,7 @@ x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=0)
 
 
 from catboost import CatBoostRegressor,Pool
-model=CatBoostRegressor(n_estimators=800,learning_rate=0.1)
+model=CatBoostRegressor(n_estimators=700,learning_rate=0.1)
 model.fit(x,y)
 
 prediction=model.predict(data_df)
